@@ -1,0 +1,583 @@
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-rt {
+  text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+  text-align: left;
+}
+
+/* text align left */
+.txt-center {
+  text-align: center;
+}
+
+/* text align center */
+.float-rt {
+  float: right;
+}
+
+/* float right */
+.float-lt {
+  float: left;
+}
+
+/* float left */
+.clear {
+  clear: both;
+}
+
+/* clear float */
+.pos-relative {
+  position: relative;
+}
+
+/* Position Relative */
+.pos-absolute {
+  position: absolute;
+}
+
+/* Position Absolute */
+.vertical-base {
+  vertical-align: baseline;
+}
+
+/* vertical align baseline */
+.vertical-top {
+  vertical-align: top;
+}
+
+/* vertical align top */
+.underline {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  margin: 0 0 20px 0;
+}
+
+/* Add 5px bottom padding and a underline */
+nav.vertical ul li {
+  display: block;
+}
+
+/* vertical menu */
+nav.horizontal ul li {
+  display: inline-block;
+}
+
+/* horizontal menu */
+img {
+  max-width: 100%;
+}
+
+.current-time {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.current-date {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+/*-- //Reset Code --*/
+
+/*-- Index-Page-Styling --*/
+
+body {
+  background: url("./images/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+body a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #f9f9f9;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 7px;
+  margin-top: 50px;
+}
+
+.container {
+  width: 75%;
+  height: 85vh;
+  margin: 50px auto;
+  box-shadow: 0 0 1.5rem rgb(34, 34, 34);
+  border-radius: 2rem;
+  display: flex;
+}
+
+.city {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.027);
+  min-height: 500px;
+  position: relative;
+  background-position-x: -30px;
+  backdrop-filter: blur(10px);
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.title {
+  float: left;
+  font-family: "Oxygen", sans-serif;
+  padding: 75px 0 30px 60px;
+}
+
+.title h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #eee;
+  margin-top: 0px;
+  text-align: right;
+}
+
+.mb-icon {
+  height: 60%;
+  position: absolute;
+  top: 2%;
+  left: 65%;
+  z-index: 1;
+}
+
+.mb-icon p {
+  color: white;
+  width: fit-content;
+  position: relative;
+  left: 20%;
+  font-size: 18px;
+}
+
+.temperature {
+  height: 100%;
+  position: absolute;
+  color: #eee;
+  top: 35%;
+  left: 20%;
+  z-index: 1;
+}
+
+.temperature p {
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0 40px;
+}
+
+.temperature p span {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.info-blocks {
+  position: absolute;
+  width: 100%;
+  height: 16%;
+  top: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.info-blocks .block {
+  height: 100%;
+  width: 20%;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.16);
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.5rem rgb(59, 59, 59);
+  gap: 0.5rem;
+}
+
+.date-time {
+  position: absolute;
+  bottom: 20%;
+  color: #fff;
+  width: 90%;
+  padding: 0 30px 10px 30px;
+  font-family: "Oxygen", sans-serif;
+}
+
+div#txt {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.dmy {
+  float: left;
+  text-align: left;
+  position: absolute;
+}
+
+
+
+
+
+.forecast {
+  width: 60%;
+  float: left;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(10px);
+  border-radius: 0 2rem 2rem 0;
+}
+
+.forecast-icon {
+  background-color: rgba(255, 255, 255, 0.251);
+  display: inline-block;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgb(43, 43, 43);
+}
+
+.forecast-icon img {
+  height: 5.2rem;
+  width: 5.2rem;
+}
+
+.forecast-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.2rem;
+  width: 80%;
+  margin: 0.4rem auto;
+}
+
+.today-weather h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #fff;
+}
+
+.today-weather ul li {
+  width: 74%;
+  margin: 0 auto;
+  line-height: 39px;
+  border-width: thin;
+  border-bottom: 1px solid #777;
+  color: #eee;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.today-weather ul li span {
+  float: right;
+  padding-right: 10px;
+}
+
+.today-weather ul li:nth-child(7) {
+  border-bottom: none;
+}
+
+.today-weather ul li:nth-child(1) {
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding-bottom: 20px;
+}
+
+
+
+/*-- //Index-Page-Styling --*/
+
+
+
+
+
+
+.cityHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cityHead p {
+  font-size: 35px;
+}
+
+
+#temp2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.2rem 0 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.search-box .img-box {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 3rem;
+  height: 32px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 18px 2px 18px;
+  cursor: pointer;
+}
+
+.search-box img {
+  width: 60%;
+
+}
+
+.search-box .search-bar {
+  border: none;
+  padding: 10px 11px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid;
+  font-size: 16px;
+}
+
+.search-box .search-bar::placeholder {
+  color: white;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-bottom: 1px solid gray;
+  transition: all 1s ease-in-out;
+}
+
+.footer-info {
+  color: white;
+}
+
+.footer-info a {
+  color: floralwhite;
+  font-weight: bold;
+}
+
+.hh_button {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, #ff8a00, #da1b60);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin-top: 30px;
+  margin: 0px;
+  position: absolute;
+  right: 20px;
+  top: 1.5%;
+}
+
+
+
+.loader-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+  }
+
+  .city {
+    width: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
+
+  .forecast {
+    width: 100%;
+    border-radius: 0rem 0rem 2rem 2rem;
+  }
+}
