@@ -4,7 +4,7 @@
 ## Overview
 The Weather Forecast App is a responsive web application built with React that provides real-time weather information for any location. The app fetches weather data from a weather API and displays it in a user-friendly format, including temperature, humidity, wind speed, and more. This project was developed as part of a Full Stack Hackathon.
 Deployed on Netlify:
-adityachavan-weatherforecast.netlify.app
+https://adityachavan-weatherforecast.netlify.app/
 
 ## Features
 - **Current Weather:** Get the current weather conditions for any city.
