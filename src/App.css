@@ -381,7 +381,6 @@ div#txt {
 .forecast {
   width: 60%;
   float: left;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.68);
   backdrop-filter: blur(10px);
   border-radius: 0 2rem 2rem 0;
@@ -563,6 +562,7 @@ div#txt {
 @media screen and (max-width: 1200px) {
   .container {
     width: 95%;
+    height: 90%;
   }
 }
 
