@@ -562,11 +562,11 @@ div#txt {
 @media screen and (max-width: 1200px) {
   .container {
     width: 95%;
-    height: 90%;
+    height: 80vh;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 899px) {
   .container {
     display: grid;
   }
